@@ -159,6 +159,9 @@ selecionarTodos.forEach(checkbox => {
     })
 })
 
+alertarAs.setAttribute('value', horarioDeAlertaDosCultos())
+verificarEAplicarAlerta()
+
 btnPararAlerta.addEventListener('click', () => {
     pararAlerta()
 })
