@@ -40,14 +40,15 @@ const configInicial = {
         { title: 'Ligar TV' },
         { title: 'Verificar conexão com internet' },
         { title: 'Abrir OBS' },
-        { title: 'Abrir Holyrics' }
+        { title: 'Abrir Holyrics' },
+        { title: 'Liga câmera (conectar fonte)' },
     ]
 }
 
 const prepararOBS = {
     id: 'PrepararOBS',
     todo: [
-        { title: 'Checar se som chega no OBS (ver entrada de audio em \'Audio Mixer\')' },
+        { title: 'Checar se som chega no OBS (ver \'Captura de Entrada de Áudio\' na seção \'Mixer de Áudio\')' },
         { title: 'Projetar tela do OBS' },
         { title: 'Atualizar cache do Holyrics Biblia' },
         { title: 'Atualizar cache do Holyrics Louvor' },
@@ -58,20 +59,19 @@ const prepararOBS = {
 const prepararHolyrics = {
     id: 'PrepararHolyrics',
     todo: [
-        { title: 'Versículo' },
-        { title: 'Louvores (Caso não tenha o louvor, pesquisar com Ctrl + Shift + H)' },
-        { title: 'Louvores com até 3 linhas' },
-        { title: 'Checar se louvores é exibido' },
-        { title: 'Flyers/Vídeos' }
+        { title: 'Pegar versículos' },
+        { title: 'Selecionar louvores (Caso não tenha o louvor, pesquisar com Ctrl + Shift + H)' },
+        { title: 'Deixar louvores com até 3 linhas' },
+        { title: 'Pegar flyers/vídeos' }
     ]
 }
 
 const prepararTransmissaoYt = {
     id: 'PrepararTransmissaoYt',
     todo: [
-        { title: 'Abrir transmissão do Youtube' },
+        { title: 'Abrir aba do Youtube no Chrome' },
         { title: 'Adicionar título: ' + infoCulto() },
-        { title: 'Atualizar thumbnail' },
+        { title: 'Atualizar thumbnail (miniatura)' },
         { title: 'Privacidade - ' + privacidadeCulto() }
     ]
 }
@@ -89,12 +89,11 @@ const minutos5 = {
     id: 'CincoMinutos',
     todo: [
         { title: 'Posicionar câmera em quem dará abertura' },
-        { title: 'Esmaecer para preto' },
+        { title: 'Desvanecer para preto (OBS em modo estúdio)' },
         { title: 'Iniciar Transmissão no OBS' },
-        { title: 'Esmarcer para iniciar o timer' },
-        { title: 'Verificar se transmissão iniciou' },
-        { title: 'Divulgar link da transmissão' },
-        { title: 'Liga câmera (conectar fonte)' },
+        { title: 'Selecionar Cena \'Começo\' e esmaecer para iniciar o timer' },
+        { title: 'Verificar se transmissão iniciou no youtube e facebook' },
+        { title: 'Divulgar link da transmissão no grupo da igreja (WhatsApp)' },
     ]
 }
 
@@ -102,14 +101,14 @@ const abertura = {
     id: 'Abertura',
     todo: [
         { title: 'Exibir o nome do pregador por 30s' },
-        { title: 'Verificar qualidade da transmissão' }
+        { title: 'Verificar qualidade da transmissão ' }
     ]
 }
 
 const dizimo = {
     id: 'Dizimo',
     todo: [
-        { title: 'Ao iniciar louvor, exibir dados bancários' },
+        { title: 'Ao iniciar louvor, exibir informações de dados bancários no OBS' },
         { title: 'Após oração, remover dados bancários' }
     ]
 }
@@ -125,7 +124,7 @@ const duranteCulto = {
 const encerrarTransmissao = {
     id: 'EncerrarTransmissao',
     todo: [
-        { title: 'Esmaecer para preto' },
+        { title: 'Desvanecer para preto' },
         { title: 'Interromper transmissão no OBS' },
         { title: 'Encerrar transmissão no Youtube' },
         { title: 'Desligar câmera e desconectar fonte' },
