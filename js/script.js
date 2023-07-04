@@ -9,30 +9,6 @@ const selecionarTodosOsMinimizers = [...document.getElementsByClassName('minimiz
 let displayTimer
 let alertaRemovido = false
 
-const infoCulto = () => {
-    const day = moment().day();
-    const today = moment().format('DD/MM/YYYY')
-
-    if (day == 0 || day == 3)
-        return `Culto da Família - ${today}`
-
-    if (day == 1)
-        return `Culto das Mulheres - ${today}`
-
-    if (day == 6)
-        return `Culto dos Jovens - ${today}`
-
-    return 'Sem Culto'
-}
-
-const privacidadeCulto = () => {
-    const day = moment().day();
-
-    return day == 1
-        ? 'Não Listado'
-        : 'Público'
-}
-
 const configInicial = {
     id: 'ConfigInicial',
     todo: [
@@ -70,9 +46,9 @@ const prepararTransmissaoYt = {
     id: 'PrepararTransmissaoYt',
     todo: [
         { title: 'Abrir aba do Youtube no Chrome' },
-        { title: 'Adicionar título: ' + infoCulto() },
+        { title: 'Adicionar título: ' + infoCulto().title },
         { title: 'Atualizar thumbnail (miniatura)' },
-        { title: 'Privacidade - ' + privacidadeCulto() }
+        { title: 'Privacidade: ' + infoCulto().privacity }
     ]
 }
 
@@ -80,7 +56,7 @@ const prepararTransmissaoFb = {
     id: 'PrepararTransmissaoFb',
     todo: [
         { title: 'Abrir transmissão do Facebook' },
-        { title: 'Adicionar título: ' + infoCulto() },
+        { title: 'Adicionar título: ' + infoCulto().title },
         { title: 'Adicionar descrição (copiar do Youtube)' },
     ]
 }
@@ -158,7 +134,7 @@ selecionarTodos.forEach(checkbox => {
     })
 })
 
-alertarAs.setAttribute('value', horarioDeAlertaDosCultos())
+alertarAs.setAttribute('value', infoCulto().alert_time)
 verificarEAplicarAlerta()
 
 btnPararAlerta.addEventListener('click', () => {
