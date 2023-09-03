@@ -5,12 +5,12 @@ const infoCulto = () => {
     const cultoDoDia = [
         {
             title: `Culto da Família - ${today}`,
-            alert_time: '17:50',
+            alert_time: '17:54',
             privacity: 'Público'
         },
         {
             title: `Culto das Mulheres - ${today}`,
-            alert_time: '19:20',
+            alert_time: '19:24',
             privacity: 'Não Listado'
         },
         {
@@ -20,8 +20,8 @@ const infoCulto = () => {
         },
         {
             title: `Culto da Família - ${today}`,
-            alert_time: '19:50',
-            privacity: 'Não Listado'
+            alert_time: '19:54',
+            privacity: 'Público'
         },
         {
             title: `Sem Culto`,
@@ -34,9 +34,9 @@ const infoCulto = () => {
             privacity: '-'
         },
         {
-            title: `Culto da Família - ${today}`,
-            alert_time: '19:20',
-            privacity: 'Não Listado'
+            title: `Culto dos Jovens - ${today}`,
+            alert_time: '19:24',
+            privacity: 'Público'
         },
     ]
 
