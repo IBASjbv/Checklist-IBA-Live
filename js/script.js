@@ -176,9 +176,10 @@ function verificarEAplicarAlerta() {
 }
 
 function aplicarAlerta() {
-    mostrarNotificacao()
-    if (!alertaRemovido)
+    if (!alertaRemovido) {
+        mostrarNotificacao()
         checklist.classList.add('alert-hour')
+    }     
 }
 
 function pararAlerta() {
