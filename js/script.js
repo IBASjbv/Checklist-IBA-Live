@@ -8,6 +8,7 @@ const selecionarTodosOsMinimizers = [...document.getElementsByClassName('minimiz
 
 let displayTimer
 let alertaRemovido = false
+let notifyDisplayed = false
 
 const configInicial = {
     id: 'ConfigInicial',
@@ -176,10 +177,14 @@ function verificarEAplicarAlerta() {
 }
 
 function aplicarAlerta() {
-    if (!alertaRemovido) {
+    if (!notifyDisplayed)
         mostrarNotificacao()
+
+    if (!alertaRemovido) {
         checklist.classList.add('alert-hour')
-    }     
+    }
+
+    notifyDisplayed = true
 }
 
 function pararAlerta() {
