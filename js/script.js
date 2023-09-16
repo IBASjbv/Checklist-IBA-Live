@@ -176,6 +176,7 @@ function verificarEAplicarAlerta() {
 }
 
 function aplicarAlerta() {
+    mostrarNotificacao()
     if (!alertaRemovido)
         checklist.classList.add('alert-hour')
 }
