@@ -1,3 +1,5 @@
-# Headline
+# Configuração Inicial
 
-> An awesome project.
+## Ligar Projetor
+## Ligar TV
+## Ligar câmera
