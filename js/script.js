@@ -8,30 +8,7 @@ const selecionarTodosOsMinimizers = [...document.getElementsByClassName('minimiz
 
 let displayTimer
 let alertaRemovido = false
-
-const infoCulto = () => {
-    const day = moment().day();
-    const today = moment().format('DD/MM/YYYY')
-
-    if (day == 0 || day == 3)
-        return `Culto da Família - ${today}`
-
-    if (day == 1)
-        return `Culto das Mulheres - ${today}`
-
-    if (day == 6)
-        return `Culto dos Jovens - ${today}`
-
-    return 'Sem Culto'
-}
-
-const privacidadeCulto = () => {
-    const day = moment().day();
-
-    return day == 1
-        ? 'Não Listado'
-        : 'Público'
-}
+let notifyDisplayed = false
 
 const configInicial = {
     id: 'ConfigInicial',
@@ -41,14 +18,15 @@ const configInicial = {
         { title: 'Ligar câmera ' },
         { title: 'Verificar conexão com internet' },
         { title: 'Abrir OBS' },
-        { title: 'Abrir Holyrics' }
+        { title: 'Abrir Holyrics' },
+        { title: 'Liga câmera (conectar fonte)' },
     ]
 }
 
 const prepararOBS = {
     id: 'PrepararOBS',
     todo: [
-        { title: 'Checar se som chega no OBS (ver entrada de audio em \'Audio Mixer\')' },
+        { title: 'Checar se som chega no OBS (ver \'Captura de Entrada de Áudio\' na seção \'Mixer de Áudio\')' },
         { title: 'Projetar tela do OBS' },
         { title: 'Atualizar cache do Holyrics Biblia' },
         { title: 'Atualizar cache do Holyrics Louvor' },
@@ -59,21 +37,21 @@ const prepararOBS = {
 const prepararHolyrics = {
     id: 'PrepararHolyrics',
     todo: [
-        { title: 'Versículo' },
-        { title: 'Louvores (Caso não tenha o louvor, pesquisar com Ctrl + Shift + H)' },
-        { title: 'Louvores com até 3 linhas' },
-        { title: 'Checar se louvor é exibido' },
-        { title: 'Flyers/Vídeos' }
+
+        { title: 'Pegar versículos' },
+        { title: 'Selecionar louvores (Caso não tenha o louvor, pesquisar com Ctrl + Shift + H)' },
+        { title: 'Deixar louvores com até 3 linhas' },
+        { title: 'Pegar flyers/vídeos' }
     ]
 }
 
 const prepararTransmissaoYt = {
     id: 'PrepararTransmissaoYt',
     todo: [
-        { title: 'Abrir transmissão do Youtube' },
-        { title: 'Adicionar título: ' + infoCulto() },
-        { title: 'Atualizar thumbnail' },
-        { title: 'Privacidade - ' + privacidadeCulto() }
+        { title: 'Abrir aba do Youtube no Chrome' },
+        { title: 'Adicionar título: ' + infoCulto().title },
+        { title: 'Atualizar thumbnail (miniatura)' },
+        { title: 'Privacidade: ' + infoCulto().privacity }
     ]
 }
 
@@ -81,7 +59,7 @@ const prepararTransmissaoFb = {
     id: 'PrepararTransmissaoFb',
     todo: [
         { title: 'Abrir transmissão do Facebook' },
-        { title: 'Adicionar título: ' + infoCulto() },
+        { title: 'Adicionar título: ' + infoCulto().title },
         { title: 'Adicionar descrição (copiar do Youtube)' },
     ]
 }
@@ -90,7 +68,7 @@ const minutos5 = {
     id: 'CincoMinutos',
     todo: [
         { title: 'Posicionar câmera em quem dará abertura' },
-        { title: 'Esmaecer para preto' },
+        { title: 'Desvanecer para preto (OBS em modo estúdio)' },
         { title: 'Iniciar Transmissão no OBS' },
         { title: 'Esmaecer para iniciar o timer' },
         { title: 'Verificar se transmissão iniciou' },
@@ -103,14 +81,14 @@ const abertura = {
     id: 'Abertura',
     todo: [
         { title: 'Exibir o nome do pregador por 30s' },
-        { title: 'Verificar qualidade da transmissão' }
+        { title: 'Verificar qualidade da transmissão ' }
     ]
 }
 
 const dizimo = {
     id: 'Dizimo',
     todo: [
-        { title: 'Ao iniciar louvor, exibir dados bancários' },
+        { title: 'Ao iniciar louvor, exibir informações de dados bancários no OBS' },
         { title: 'Após oração, remover dados bancários' }
     ]
 }
@@ -126,7 +104,7 @@ const duranteCulto = {
 const encerrarTransmissao = {
     id: 'EncerrarTransmissao',
     todo: [
-        { title: 'Esmaecer para preto' },
+        { title: 'Desvanecer para preto' },
         { title: 'Interromper transmissão no OBS' },
         { title: 'Encerrar transmissão no Youtube' },
         { title: 'Desligar câmera e desconectar fonte' },
@@ -159,6 +137,9 @@ selecionarTodos.forEach(checkbox => {
             selecionarOuLimparTodosDoGrupo(checkbox, false)
     })
 })
+
+alertarAs.setAttribute('value', infoCulto().alert_time)
+verificarEAplicarAlerta()
 
 btnPararAlerta.addEventListener('click', () => {
     pararAlerta()
@@ -199,8 +180,14 @@ function verificarEAplicarAlerta() {
 }
 
 function aplicarAlerta() {
-    if (!alertaRemovido)
+    if (!notifyDisplayed)
+        mostrarNotificacao()
+
+    if (!alertaRemovido) {
         checklist.classList.add('alert-hour')
+    }
+
+    notifyDisplayed = true
 }
 
 function pararAlerta() {
