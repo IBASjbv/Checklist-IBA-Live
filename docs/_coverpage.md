@@ -1,4 +1,4 @@
-![logo](_media/logo-IBA.png ":class=logo-iba")
+![logo](./_media/logo-IBA.png ":class=logo-iba")
 
 # Igreja Batista Ágape
 
