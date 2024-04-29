@@ -76,7 +76,12 @@ const prepararTransmissaoYt = {
     { title: "Abrir transmissão do Youtube" },
     { title: "Adicionar título: " + infoCulto() },
     { title: "Atualizar thumbnail com base no dia da semana" },
-    { title: "Privacidade - " + privacidadeCulto() + " \n (apenas para os cultos de quarta e domingo à noite)"},
+    {
+      title:
+        "Privacidade - " +
+        privacidadeCulto() +
+        " \n (usar público apenas para os cultos de quarta e domingo à noite)",
+    },
   ],
 };
 
