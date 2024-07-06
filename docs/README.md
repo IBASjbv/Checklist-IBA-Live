@@ -1,6 +1,3 @@
-{% raw %} {% include youtube.html id="TW3eddysc9c" %}
-{% endraw %}
-
 # Configuração Inicial
 
 ## Projeção x Transmissão
