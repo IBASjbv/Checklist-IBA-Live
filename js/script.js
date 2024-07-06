@@ -47,7 +47,7 @@ const prepararOBS = {
   todo: [
     {
       title:
-        "Checar se som chega no OBS (ver entrada de audio em 'Audio Mixer')",
+        "Checar se som chega no OBS (verificar captura de  entrada de audio no painel 'Mixer de áudio')",
     },
     { title: "Projetar tela do OBS" },
     { title: "Atualizar cache do Holyrics Biblia" },
@@ -59,21 +59,21 @@ const prepararOBS = {
 const prepararHolyrics = {
   id: "PrepararHolyrics",
   todo: [
-    { title: "Versículo" },
+    { title: "Pegar versículos no grupo 'Sermão e Flyers' do Whatsapp" },
     {
       title:
         "Louvores (Caso não tenha o louvor, pesquisar com Ctrl + Shift + H)",
     },
-    { title: "Deixar louvores com até 3 linhas por verso" },
+    { title: "Deixar louvores com até 2 linhas por verso" },
     { title: "Checar se louvor é exibido" },
-    { title: "Flyers/Vídeos" },
+    { title: "Verificar se flyers estão no holyrics para o dia de hoje" },
   ],
 };
 
 const prepararTransmissaoYt = {
   id: "PrepararTransmissaoYt",
   todo: [
-    { title: "Abrir transmissão do Youtube" },
+    { title: "Abrir página da transmissão do Youtube" },
     { title: "Adicionar título: " + infoCulto() },
     { title: "Atualizar thumbnail com base no dia da semana" },
     {
@@ -85,22 +85,12 @@ const prepararTransmissaoYt = {
   ],
 };
 
-const prepararTransmissaoFb = {
-  id: "PrepararTransmissaoFb",
-  todo: [
-    { title: "Abrir transmissão do Facebook" },
-    { title: "Adicionar título: " + infoCulto() },
-    { title: "Adicionar descrição (copiar do Youtube)" },
-  ],
-};
-
 const minutos5 = {
   id: "CincoMinutos",
   todo: [
     { title: "Posicionar câmera em quem dará abertura" },
-    { title: "Esmaecer para preto" },
+    { title: "Mudar para cena 'Início' para iniciar a contagem regressiva" },
     { title: "Iniciar Transmissão no OBS" },
-    { title: "Esmaecer para iniciar o timer" },
     { title: "Verificar se transmissão iniciou" },
     { title: "Divulgar link da transmissão" },
   ],
@@ -133,7 +123,8 @@ const duranteCulto = {
 const encerrarTransmissao = {
   id: "EncerrarTransmissao",
   todo: [
-    { title: "Esmaecer para preto" },
+    { title: "Mudar para a cena final" },
+    { title: "Desvanecer para preto" },
     { title: "Interromper transmissão no OBS" },
     { title: "Encerrar transmissão no Youtube" },
     { title: "Desligar câmera" },
