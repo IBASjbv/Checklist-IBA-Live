@@ -1,5 +1,4 @@
-{% raw %} {% include youtube.html id="TW3eddysc9c" %}
-{% endraw %}
+{% include youtube.html id="TW3eddysc9c" %}
 
 # Configuração Inicial
 
