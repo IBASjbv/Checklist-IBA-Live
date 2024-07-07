@@ -8,6 +8,7 @@ const selecionarTodosOsMinimizers = [
   ...document.getElementsByClassName("minimizerMaximizer"),
 ];
 
+<<<<<<< HEAD
 let displayTimer;
 let alertaRemovido = false;
 
@@ -111,6 +112,94 @@ const dizimo = {
     { title: "Após oração, remover dados bancários" },
   ],
 };
+=======
+let displayTimer
+let alertaRemovido = false
+let notifyDisplayed = false
+
+const configInicial = {
+    id: 'ConfigInicial',
+    todo: [
+        { title: 'Ligar Projetor' },
+        { title: 'Ligar TV' },
+        { title: 'Ligar câmera ' },
+        { title: 'Verificar conexão com internet' },
+        { title: 'Abrir OBS' },
+        { title: 'Abrir Holyrics' },
+        { title: 'Liga câmera (conectar fonte)' },
+    ]
+}
+
+const prepararOBS = {
+    id: 'PrepararOBS',
+    todo: [
+        { title: 'Checar se som chega no OBS (ver \'Captura de Entrada de Áudio\' na seção \'Mixer de Áudio\')' },
+        { title: 'Projetar tela do OBS' },
+        { title: 'Atualizar cache do Holyrics Biblia' },
+        { title: 'Atualizar cache do Holyrics Louvor' },
+        { title: 'Atualizar cache de Holyrics Imagem' },
+    ]
+}
+
+const prepararHolyrics = {
+    id: 'PrepararHolyrics',
+    todo: [
+
+        { title: 'Pegar versículos' },
+        { title: 'Selecionar louvores (Caso não tenha o louvor, pesquisar com Ctrl + Shift + H)' },
+        { title: 'Deixar louvores com até 3 linhas' },
+        { title: 'Pegar flyers/vídeos' }
+    ]
+}
+
+const prepararTransmissaoYt = {
+    id: 'PrepararTransmissaoYt',
+    todo: [
+        { title: 'Abrir aba do Youtube no Chrome' },
+        { title: 'Adicionar título: ' + infoCulto().title },
+        { title: 'Atualizar thumbnail (miniatura)' },
+        { title: 'Privacidade: ' + infoCulto().privacity }
+    ]
+}
+
+const prepararTransmissaoFb = {
+    id: 'PrepararTransmissaoFb',
+    todo: [
+        { title: 'Abrir transmissão do Facebook' },
+        { title: 'Adicionar título: ' + infoCulto().title },
+        { title: 'Adicionar descrição (copiar do Youtube)' },
+    ]
+}
+
+const minutos5 = {
+    id: 'CincoMinutos',
+    todo: [
+        { title: 'Posicionar câmera em quem dará abertura' },
+        { title: 'Desvanecer para preto (OBS em modo estúdio)' },
+        { title: 'Iniciar Transmissão no OBS' },
+        { title: 'Esmaecer para iniciar o timer' },
+        { title: 'Verificar se transmissão iniciou' },
+        { title: 'Divulgar link da transmissão' },
+
+    ]
+}
+
+const abertura = {
+    id: 'Abertura',
+    todo: [
+        { title: 'Exibir o nome do pregador por 30s' },
+        { title: 'Verificar qualidade da transmissão ' }
+    ]
+}
+
+const dizimo = {
+    id: 'Dizimo',
+    todo: [
+        { title: 'Ao iniciar louvor, exibir informações de dados bancários no OBS' },
+        { title: 'Após oração, remover dados bancários' }
+    ]
+}
+>>>>>>> 3ec98ac09918f8782589cbb3c611e2c434f96d62
 
 const duranteCulto = {
   id: "duranteCulto",
@@ -121,6 +210,7 @@ const duranteCulto = {
 };
 
 const encerrarTransmissao = {
+<<<<<<< HEAD
   id: "EncerrarTransmissao",
   todo: [
     { title: "Mudar para a cena final" },
@@ -134,6 +224,20 @@ const encerrarTransmissao = {
     { title: "Fechar Youtube" },
   ],
 };
+=======
+    id: 'EncerrarTransmissao',
+    todo: [
+        { title: 'Desvanecer para preto' },
+        { title: 'Interromper transmissão no OBS' },
+        { title: 'Encerrar transmissão no Youtube' },
+        { title: 'Desligar câmera e desconectar fonte' },
+        { title: 'Remover versículos do favoritos' },
+        { title: 'Fechar Holyrics' },
+        { title: 'Fechar OBS' },
+        { title: 'Fechar Youtube' },
+    ]
+}
+>>>>>>> 3ec98ac09918f8782589cbb3c611e2c434f96d62
 
 const todos = [
   configInicial,
@@ -157,9 +261,18 @@ selecionarTodos.forEach((checkbox) => {
   });
 });
 
+<<<<<<< HEAD
 btnPararAlerta.addEventListener("click", () => {
   pararAlerta();
 });
+=======
+alertarAs.setAttribute('value', infoCulto().alert_time)
+verificarEAplicarAlerta()
+
+btnPararAlerta.addEventListener('click', () => {
+    pararAlerta()
+})
+>>>>>>> 3ec98ac09918f8782589cbb3c611e2c434f96d62
 
 alertarAs.addEventListener("change", function () {
   alertaRemovido = false;
@@ -197,7 +310,18 @@ function verificarEAplicarAlerta() {
 }
 
 function aplicarAlerta() {
+<<<<<<< HEAD
   if (!alertaRemovido) checklist.classList.add("alert-hour");
+=======
+    if (!notifyDisplayed)
+        mostrarNotificacao()
+
+    if (!alertaRemovido) {
+        checklist.classList.add('alert-hour')
+    }
+
+    notifyDisplayed = true
+>>>>>>> 3ec98ac09918f8782589cbb3c611e2c434f96d62
 }
 
 function pararAlerta() {

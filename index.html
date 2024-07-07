@@ -26,6 +26,12 @@
     <div class="container-fluid">
       <div class="header m-3">
         <h1>Checklist - Live</h1>
+<<<<<<< HEAD
+=======
+        <h2>
+          <a href="docs" class="">Dúvidas clique aqui</a>
+        </h2>
+>>>>>>> 3ec98ac09918f8782589cbb3c611e2c434f96d62
         <div class="d-flex flex-column justify-content-end">
           <span id="hoje"></span>
           <span id="timer"></span>
@@ -89,12 +95,28 @@
               <input
                 class="form-check-input select-input"
                 type="checkbox"
+<<<<<<< HEAD
+=======
+                data-target="PrepararTransmissaoFb"
+              />
+              <span class="h2 fw-bold">Preparar Facebook</span>
+            </label>
+          </div>
+          <div class="mb-3" id="PrepararTransmissaoFb"></div>
+
+          <div class="select-all">
+            <label class="form-check-label">
+              <input
+                class="form-check-input select-input"
+                type="checkbox"
+>>>>>>> 3ec98ac09918f8782589cbb3c611e2c434f96d62
                 data-target="CincoMinutos"
               />
               <span class="h2 fw-bold">5 Minutos</span>
             </label>
           </div>
           <div class="mb-3" id="CincoMinutos"></div>
+<<<<<<< HEAD
         </div>
 
         <div class="col-md-3">
@@ -175,11 +197,99 @@
             </div>
           </div>
         </div>
+=======
+        </div>
+
+        <div class="col-md-3">
+          <div class="select-all">
+            <label class="form-check-label">
+              <input
+                class="form-check-input select-input"
+                type="checkbox"
+                data-target="Abertura"
+              />
+              <span class="h2 fw-bold">Abertura</span>
+            </label>
+          </div>
+          <div class="mb-3" id="Abertura"></div>
+
+          <div class="select-all">
+            <label class="form-check-label">
+              <input
+                class="form-check-input select-input"
+                type="checkbox"
+                data-target="Dizimo"
+              />
+              <span class="h2 fw-bold">Dízimo</span>
+            </label>
+          </div>
+          <div class="mb-3" id="Dizimo"></div>
+
+          <div class="select-all">
+            <label class="form-check-label">
+              <input
+                class="form-check-input select-input"
+                type="checkbox"
+                data-target="duranteCulto"
+              />
+              <span class="h2 fw-bold">Durante o Culto</span>
+            </label>
+          </div>
+          <div class="mb-3" id="duranteCulto"></div>
+
+          <div class="select-all">
+            <label class="form-check-label">
+              <input
+                class="form-check-input select-input"
+                type="checkbox"
+                data-target="EncerrarTransmissao"
+              />
+              <span class="h2 fw-bold">Encerrar Transmissão</span>
+            </label>
+          </div>
+          <div class="mb-3" id="EncerrarTransmissao"></div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="row mb-3">
+            <div class="col-md-6">
+              <label class="form-label fw-bold">Alertar às</label>
+              <input type="time" class="form-control" id="alertarAs" />
+            </div>
+            <div class="col-md-6">
+              <label class="form-label fw-bold d-block">Ações</label>
+              <button class="btn btn-primary" id="btnPararAlerta">
+                Parar Alerta
+              </button>
+            </div>
+
+            <div class="col-md-3">
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label class="form-label fw-bold">Alertar às</label>
+                        <input type="time" class="form-control" id="alertarAs">
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label fw-bold d-block">Ações</label>
+                        <button class="btn btn-primary" id="btnPararAlerta">Parar Alerta</button>
+                    </div>
+                </div>
+                
+                <div class="mb-3">
+                    <label class="form-label fw-bold">Notas</label>
+                    <textarea id="notes" class="form-control" rows="18"></textarea>
+                </div>
+            </div>
+          </div>
+        </div>
+>>>>>>> 3ec98ac09918f8782589cbb3c611e2c434f96d62
       </div>
     </div>
     <script src="lib/moment-locales.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/notification.js"></script>
     <script src="js/notes.js"></script>
+    <script src="js/infoCulto.js"></script>
+    <script src="js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
       const popoverTriggerList = document.querySelectorAll(
@@ -189,5 +299,9 @@
         (popoverTriggerEl) => new bootstrap.Popover(popoverTriggerEl)
       );
     </script>
+<<<<<<< HEAD
   </body>
+=======
+</body>
+>>>>>>> 3ec98ac09918f8782589cbb3c611e2c434f96d62
 </html>

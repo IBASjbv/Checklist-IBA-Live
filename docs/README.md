@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Configuração Inicial
 
 ## Projeção x Transmissão
@@ -58,3 +59,8 @@ O nome do pregador aparecerá apenas quando a Fonte estiver visível:
 ## Ligar TV
 
 ## Ligar câmera
+=======
+# Antes de iniciar
+
+> Primeiros passos antes de ligar o computador.
+>>>>>>> 3ec98ac09918f8782589cbb3c611e2c434f96d62
