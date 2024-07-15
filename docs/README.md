@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Configuração Inicial
 
 ## Projeção x Transmissão
@@ -53,14 +52,3 @@ Após 30 segundos, clicar no botão Stop.
 O nome do pregador aparecerá apenas quando a Fonte estiver visível:
 
 ![Uno Overlay Example](./_media/uno-overlay-source.png ":class=uno-overlay-source")
-
-## Ligar Projetor
-
-## Ligar TV
-
-## Ligar câmera
-=======
-# Antes de iniciar
-
-> Primeiros passos antes de ligar o computador.
->>>>>>> 3ec98ac09918f8782589cbb3c611e2c434f96d62
