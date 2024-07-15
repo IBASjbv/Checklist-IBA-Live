@@ -189,7 +189,7 @@ function renderizarItemDoChecklist(obj) {
 }
 
 function verificarEAplicarAlerta() {
-  const horarioAtual = moment().format("HH:mm");
+  const horarioAtual = moment().format("HH:mm:ss");
   const horarioDoAlerta = alertarAs.value;
 
   if (horarioDoAlerta == "") return false;
