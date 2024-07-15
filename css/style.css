@@ -6,6 +6,7 @@
 
 body {
     background-color: #333;
+    color: white;
 }
 
 h1 {
@@ -19,8 +20,14 @@ h2,
     font-weight: bold;
 }
 
-.container-fluid {
+.docs a {
     color: #FFF;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.docs a:hover {
+    text-decoration: underline;
 }
 
 .header {

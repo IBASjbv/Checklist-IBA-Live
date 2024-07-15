@@ -21,19 +21,21 @@
 
     <title>Checklist - Live</title>
   </head>
-  </head>
 
-  <body id="checklist">
   <body id="checklist">
     <div class="container-fluid">
       <div class="header m-3">
         <h1>Checklist - Live</h1>
+        <div class="docs">
+          <a href="docs/index.html" target="_blank">Dúvidas? Clique aqui</a>
+        </div>
         <div class="d-flex flex-column justify-content-end">
           <span id="hoje"></span>
           <span id="timer"></span>
         </div>
       </div>
-
+    </div>
+    <div class="container-fluid">
       <div class="row">
         <div class="col-md-3">
           <div class="form-check select-all">
@@ -153,7 +155,12 @@
           <div class="row mb-3">
             <div class="col-md-6">
               <label class="form-label fw-bold">Alertar às</label>
-              <input type="time" class="form-control" id="alertarAs" step=1 />
+              <input
+                type="time"
+                class="form-control"
+                id="alertarAs"
+                step="1"
+              />
             </div>
             <div class="col-md-6">
               <label class="form-label fw-bold d-block">Ações</label>
