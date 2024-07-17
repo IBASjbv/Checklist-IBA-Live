@@ -1,4 +1,6 @@
-# Projeção x Transmissão :id=projecao-transmissao
+# Dicas gerais :id=dicas-gerais
+
+## Projeção x Transmissão :id=projecao-transmissao
 
 ?>Projeção é tudo o que fazemos internamente, por exemplo:
 Ao iniciar o OBS projetamos a tela de programa para a igreja.
@@ -8,7 +10,7 @@ Ao iniciar o OBS projetamos a tela de programa para a igreja.
 ?>Transmissão é tudo o que enviamos para outro lugar, por exemplo:
 Ao iniciarmos a transmissão, estamos enviando nosso vídeo em tempo real para o Youtube.
 
-# Projeção Interna / 30 semanas
+## Projeção Interna - 30 semanas
 
 Para a projeção interna, e nos dias do 30 semanas é necessário alterar a forma de exibição do holyrics. Para fazer isso, você precisa estar na tela inicial do holyrics, e clicar em configurações de exibição:
 
@@ -19,6 +21,24 @@ E desmarcar a opção ocultar tela:
 ![Holyrics View Settings](./_media/exibition-settings.png ":class=ex-settings")
 
 Ao término do 30 semanas, voltar a configuração para ocultar tela e testar antes de desligar o computador.
+
+## OBS - Modo estúdio
+
+?> A utilização do modo estúdio é recomendada na maioria dos casos, pois dessa forma é possível fazer ajustes e testes antes de mandar as informações do OBS para a projeção e para o Youtube.
+
+![OBS modo estúdio](./_media/obs-modo-estudio.png ":class=ex-settings")
+
+No modo estúdio é necessário utilizar o botão de transição para alternar entre as cenas de prévia (esquerda) e do programa (direita).
+
+![OBS transição](./_media/obs-transicao.png ":class=ex-settings")
+
+## Organização em Cenas
+
+?> As cenas são utilizadas e separadas por momentos específicos do culto, e cada uma delas contém apenas o que é necessário para ser exibido.
+
+![OBS Cenas](./_media/Cenas-OBS.jpeg ":class=ex-settings")
+
+---
 
 # 1. Configuração Inicial
 
@@ -84,7 +104,93 @@ Salvar e sair ao terminar:
 
 ![Salvar Louvor](./_media/2-3-3-Salvar-sair.png ":class=salvar-louvor")
 
+## 2.4. Verificar se o louvor é exibido
+
+## 2.5. Verificar se flyers solicitados estão presentes
+
+---
+
+# 3. Preparar OBS
+
+## 3.1. Verificar se som está chegando no OBS
+
+!> _NUNCA_ Baixe o volume de entrada no OBS, o volume de saída para a live é ajustado _SOMENTE_ na mesa de som.
+
+![Verificar Som OBS](./_media/3-1-Checar-som-OBS.png ":class=som-obs")
+
+## 3.2. Projetar tela do OBS
+
+![Projetar OBS](./_media/3-2-Projetar-OBS.png ":class=projetar-obs")
+
+## 3.3. Atualizar Cache do Holyrics Bíblia
+
+![Cache Bíblia](./_media/3-3-1-Atualizar-cache-Biblia.png ":class=projetar-obs")
+
+## 3.4. Atualizar Cache do Holyrics Louvor
+
+![Cache Louvor](./_media/3-3-2-Atualizar-cache-Louvor.png ":class=projetar-obs")
+
+## 3.5. Atualizar Cache do Holyrics Imagem
+
+![Cache Imagem](./_media/3-3-3-Atualizar-cache-Imagem.png ":class=projetar-obs")
+
+---
+
+# 4. Preparar Youtube
+
+## 4.1. Abrir página da transmissão do Youtube
+
+![Abrir Youtube](./_media/4-1-Abrir-aba-Youtube.png ":class=abrir-youtube")
+
+## 4.2. Alterar título
+
+### 4.2.1. Pegar título na Checklist
+
+![Pegar Título Checklist](./_media/4-2-1-Pegar-titulo-checklist.png ":class=titulo-checklist")
+
+> O título da checklist é gerado automaticamente nos dias de cultos (Segunda, Quarta, Sábado e Domingo). Caso o culto/evento seja em outro dia, digitar o nome do mesmo diretamente no Youtube.
+
+### 4.2.2. Editar título da transmissão no Youtube
+
+![Editar Título Transmissão](./_media/4-2-Editar-titulo-transmissao.png ":class=titulo-transmissao")
+
+## 4.3. Editar miniatura do vídeo com base no dia da semana
+
+Clicar no botão editar
+
+![Editar miniatura](./_media/4-3-1-Atualizar-miniatura.png ":class=editar-miniatura")
+
+Escolher miniatura no PC
+
+![Escolher miniatura](./_media/4-3-2-escolher-miniatura.png ":class=escolher-miniatura")
+
+## 4.4. Visibilidade
+
+> Público - Visível para todos - Apenas cultos de Quarta/Domingo à noite
+
+> Não listado - Visível _APENAS_ para quem possui o link - Todos os outros cultos/eventos
+
+> Privado - Disponível apenas para o dono do canal.
+
+![Escolher miniatura](./_media/4-4-Mudar-visibilidade.png ":class=escolher-miniatura")
+
+# 5. 5 Minutos para o Início do culto
+
+?> O passo 5.1. é relacionado à Camera
+
+## 5.2. Mudar para cena 'Início' para iniciar a contagem regressiva
+
+## 5.3. Iniciar Transmissão no OBS
+
+## 5.4. Verificar se transmissão iniciou
+
+## 5.5. Divulgar link da transmissão
+
+---
+
 # 6. Abertura
+
+---
 
 ## 6.1. Como exibir o Nome do pregador(a)
 
@@ -109,3 +215,13 @@ Para verificar a qualidade da transmissão, é necessário olhar na página da t
 !>IMPORTANTE: Caso a transmissão esteja muito ruim ao iniciar o culto, iniciar a gravação em arquivo no PC.Em último caso esse vídeo pode ser enviado para o youtube posteriormente.
 
 ![Qualidade da Transmissão](./_media/6-2-Qualidade-transmissao.png":class=qualidade-transmissao")
+
+# 7. Dízimo
+
+---
+
+# 8. Durante o culto
+
+---
+
+# 9. Encerrar transmissão

@@ -5,4 +5,4 @@
 ## Documentação para transmissão e projeção dos cultos.
 
 [Ir para Checklist](https://ibasjbv.github.io/Checklist-IBA-Live)
-[Ler documentação](#projecao-transmissao)
+[Ler documentação](#dicas-gerais)
