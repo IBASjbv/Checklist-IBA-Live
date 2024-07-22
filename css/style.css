@@ -1,3 +1,9 @@
+:root {
+    --gradient-bg: linear-gradient(to right, #0f0f0f, #333);
+    --alert-bg: linear-gradient(to bottom, #0f0f0f, #D41414);
+}
+
+
 * {
     font-family: 'Exo 2', sans-serif;
     font-size: 14px;
@@ -5,8 +11,12 @@
 }
 
 body {
-    background-color: #333;
+    background-image: var(--gradient-bg);
     color: white;
+}
+
+#checklist {
+    height: 100vh;
 }
 
 h1 {
@@ -14,7 +24,6 @@ h1 {
     font-weight: bold;
 }
 
-h2,
 .form-check-label span.h2 {
     font-size: 1.3rem;
     font-weight: bold;
@@ -56,10 +65,10 @@ h2,
 
 @keyframes alertable {
     from {
-        background-color: #333;
+        background-image: var(--gradient-bg);
     }
 
     to {
-        background-color: #D41414;
+        background-image: var(--alert-bg);
     }
 }
