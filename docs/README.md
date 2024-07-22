@@ -76,6 +76,16 @@ Os Versículos que serão utilizados nos cultos normalmente são enviados em at�
 
 ![Grupo de Flyers](./_media/2-1-Pegar-versículos.png ":class=versiculos-whatsapp")
 
+### 2.1.1 Procurar versículos no Holyrics
+
+Na parte de bíblia do holyrics, começar a digitar o nome do livro da Bíblia:
+
+![Pesquisar Versiculo no Holyrics](./_media/2-1-1-Pesquisar-versiculos-holyrics.png ":class=versiculos-holyrics")
+
+Após encontrar o versículo, adicioná-lo à lista de favoritos:
+
+![Pesquisar Versiculo no Holyrics](./_media/2-1-2-Adicionar-favoritos-holyrics.png ":class=versiculos-holyrics")
+
 ## 2.2. Pegar louvores para o culto atual
 
 Os louvores que serão ministrados nos cultos normalmente são enviados em até 1 dia de antecedência, no grupo do Ministério de Louvor e da Igreja...
@@ -106,7 +116,13 @@ Salvar e sair ao terminar:
 
 ## 2.4. Verificar se o louvor é exibido
 
+![Louvor Exibido no OBS](./_media/2-4-louvor-exibido.png ":class=salvar-louvor")
+
 ## 2.5. Verificar se flyers solicitados estão presentes
+
+<video width="1080" controls loop autoplay>
+<source src="./_media/flyers-demo.mp4" type="video/mp4">
+</video>
 
 ---
 
