@@ -120,8 +120,20 @@ Salvar e sair ao terminar:
 
 ## 2.5. Verificar se flyers solicitados estão presentes
 
-<video width="1080" controls loop autoplay>
-<source src="./_media/flyers-demo.mp4" type="video/mp4">
+<video width="1080" loop autoplay muted>
+<source src="./_media/2-5-Verificar-flyers-solicitados.mov" type="video/mp4">
+</video>
+
+### 2.5.1. Adicionar flyers ao holyrics
+
+<video width="1080" loop autoplay muted>
+<source src="./_media/2-5-1-Copiar-flyers-holyrics.mov" type="video/mp4">
+</video>
+
+### 2.5.2. Renomear flyers
+
+<video width="1080" loop autoplay muted>
+<source src="./_media/2-5-2-Renomear-flyers.mov" type="video/mp4">
 </video>
 
 ---
@@ -230,9 +242,17 @@ Para verificar a qualidade da transmissão, é necessário olhar na página da t
 
 !>IMPORTANTE: Caso a transmissão esteja muito ruim ao iniciar o culto, iniciar a gravação em arquivo no PC.Em último caso esse vídeo pode ser enviado para o youtube posteriormente.
 
-![Qualidade da Transmissão](./_media/6-2-Qualidade-transmissao.png":class=qualidade-transmissao")
+![Qualidade da Transmissão](./_media/6-2-Qualidade-transmissao.png ":class=qualidade-transmissao")
 
 # 7. Dízimo
+
+Ajustar a câmera para que as informações da conta bancária não sobreponha o pessoal do louvor no vídeo.
+
+![Dízimos e ofertas](./_media/7-1-dizimo-ofertas.png ":class=qualidade-transmissao")
+
+Fazer a transição quando o louvor iniciar.
+
+Mudar para outra cena ao final da oração.
 
 ---
 
