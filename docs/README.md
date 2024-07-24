@@ -32,6 +32,12 @@ No modo estúdio é necessário utilizar o botão de transição para alternar e
 
 ![OBS transição](./_media/obs-transicao.png ":class=ex-settings")
 
+## OBS - Modo padrão
+
+?> A utilização do modo padrão exige maior atenção entre a câmera e o OBS. Não recomendada caso exista a necessidade de ajustar a câmera antes de mandar o conteúdo para a transmissão, pois não há separação entre cenas em espera e a cena que está sendo enviada.
+
+![OBS transição](./_media/obs-transicao.png ":class=ex-settings")
+
 ## Organização em Cenas
 
 ?> As cenas são utilizadas e separadas por momentos específicos do culto, e cada uma delas contém apenas o que é necessário para ser exibido.
@@ -250,9 +256,9 @@ Ajustar a câmera para que as informações da conta bancária não sobreponha o
 
 ![Dízimos e ofertas](./_media/7-1-dizimo-ofertas.png ":class=qualidade-transmissao")
 
-Fazer a transição quando o louvor iniciar.
+## 7.1 Fazer a transição quando o louvor iniciar.
 
-Mudar para outra cena ao final da oração.
+## 7.2 Mudar para outra cena ao final da oração.
 
 ---
 
@@ -261,3 +267,29 @@ Mudar para outra cena ao final da oração.
 ---
 
 # 9. Encerrar transmissão
+
+## 9.1. Mudar para a cena final
+
+![Cena Final](./_media/9-1-cena-final.png ":class=cena-final")
+
+## 9.2. Desvanecer para preto
+
+![Cena Final](./_media/9-2-desvanecer.png ":class=desvanecer")
+
+## 9.3. Interromper Transmissão no OBS
+
+![Cena Final](./_media/9-3-interromper-transmissao.png ":class=interromper-transmissao")
+
+## 9.4. Encerrar Transmissão no Youtube
+
+![Cena Final](./_media/9-4-1-encerrar-transmissao-yt.png ":class=encerrar-youtube")
+
+## 9.5. Desligar Câmera
+
+## 9.6. Remover versículos dos favoritos
+
+## 9.7. Fechar Holyrics
+
+## 9.8. Fechar OBS
+
+## 9.9. Fechar Google Chrome
