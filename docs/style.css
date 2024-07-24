@@ -2,3 +2,7 @@
     min-width: 100px;
     max-width: 300px;
 }
+
+video {
+    max-width: 100%;
+}
