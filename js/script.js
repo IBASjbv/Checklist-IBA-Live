@@ -38,8 +38,8 @@ const configInicial = {
     { title: "Ligar TV" },
     { title: "Ligar câmera " },
     { title: "Verificar conexão com internet" },
-    { title: "Abrir OBS" },
     { title: "Abrir Holyrics" },
+    { title: "Abrir OBS" },
   ],
 };
 
@@ -115,10 +115,7 @@ const dizimo = {
 
 const duranteCulto = {
   id: "duranteCulto",
-  todo: [
-    { title: "Exibir o nome do pregador por 30s" },
-    { title: "Rodar banner de 'Redes Sociais' no OBS" },
-  ],
+  todo: [{ title: "Rodar banner de 'Redes Sociais' no OBS" }],
 };
 
 const encerrarTransmissao = {
