@@ -214,11 +214,32 @@ Escolher miniatura no PC
 
 ## 5.2. Mudar para cena 'Início' para iniciar a contagem regressiva
 
+<video width="1080" loop autoplay muted>
+<source src="./_media/5-2-cena-inicio.mov" type="video/mp4">
+</video>
+
 ## 5.3. Iniciar Transmissão no OBS
+
+<video width="1080" loop autoplay muted>
+<source src="./_media/5-3-transmissao-obs.mov" type="video/mp4">
+</video>
 
 ## 5.4. Verificar se transmissão iniciou
 
+<video width="1080" loop autoplay muted>
+<source src="./_media/5-4-verificar-transmissao-iniciada.mov" type="video/mp4">
+</video>
+
 ## 5.5. Divulgar link da transmissão
+
+Para pegar o link da transmissão acesse a página da transmissão no youtube:
+
+!>Compartilhar o link no grupo da igreja para cultos _públicos_ (quarta e domingo à noite) e somente para quem estiver autorizado nos outros cultos (grupo de louvor).
+
+![Divulgar Link 1](./_media/5-5-divulga-link-1.png ":class=escolher-miniatura")
+
+Copiar o link na janela seguinte:
+![Divulgar Link 1](./_media/5-5-1-divulga-link-2.png ":class=escolher-miniatura")
 
 ---
 
@@ -288,8 +309,6 @@ Ajustar a câmera para que as informações da conta bancária não sobreponha o
 
 ## 9.6. Remover versículos dos favoritos
 
-## 9.7. Fechar Holyrics
-
-## 9.8. Fechar OBS
-
-## 9.9. Fechar Google Chrome
+<video width="1080" loop autoplay muted>
+<source src="./_media/9-6-limpar-favoritos.mov" type="video/mp4">
+</video>
