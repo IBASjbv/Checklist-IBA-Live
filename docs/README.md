@@ -68,7 +68,7 @@ Para verificar a conexão com a internet, cheque o ícone próximo ao relógio:
 
 O Holyrics e OBS são abertos ao clicar 2x em seus ícones.
 
-!> IMPORTANTE: Abrir _SEMPRE_ o Holyrics primeiro, pois o OBS depende dele já estar aberto para exibição de músicas, imagens e a Bíblia.
+!> IMPORTANTE: Abrir _SEMPRE_ o Holyrics primeiro, pois o OBS depende dele já estar aberto para exibição de músicas, imagens e a Bíblia. Caso o OBS tenha sido aberto primeiro, é necessário [Atualizar o Cache](#atualizar-cache)
 
 ![Abrir apps](./_media/1-5-6-Abrir-OBS-Holyrics.png ":class=abrir-apps")
 
@@ -158,7 +158,7 @@ Salvar e sair ao terminar:
 
 ## 3.3. Atualizar Cache do Holyrics Bíblia
 
-![Cache Bíblia](./_media/3-3-1-Atualizar-cache-Biblia.png ":class=projetar-obs")
+![Cache Bíblia](./_media/3-3-1-Atualizar-cache-Biblia.png ":id=atualizar-cache")
 
 ## 3.4. Atualizar Cache do Holyrics Louvor
 
@@ -275,16 +275,21 @@ Para verificar a qualidade da transmissão, é necessário olhar na página da t
 
 Ajustar a câmera para que as informações da conta bancária não sobreponha o pessoal do louvor no vídeo.
 
+?>Fazer a transição quando o louvor iniciar.
+
 ![Dízimos e ofertas](./_media/7-1-dizimo-ofertas.png ":class=qualidade-transmissao")
 
-## 7.1 Fazer a transição quando o louvor iniciar.
-
-## 7.2 Mudar para outra cena ao final da oração.
+?>Mudar para outra cena ao final da oração.
 
 ---
 
 # 8. Durante o culto
 
+## 8.1. Rodar vídeo redes sociais
+
+<video width="1080" loop autoplay muted>
+<source src="./_media/8-1-Redes-sociais.mov" type="video/mp4">
+</video>
 ---
 
 # 9. Encerrar transmissão
@@ -304,8 +309,6 @@ Ajustar a câmera para que as informações da conta bancária não sobreponha o
 ## 9.4. Encerrar Transmissão no Youtube
 
 ![Cena Final](./_media/9-4-1-encerrar-transmissao-yt.png ":class=encerrar-youtube")
-
-## 9.5. Desligar Câmera
 
 ## 9.6. Remover versículos dos favoritos
 
