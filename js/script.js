@@ -1,5 +1,4 @@
 moment.locale("pt-br");
-
 const checklist = document.getElementById("checklist");
 const alertarAs = document.getElementById("alertarAs");
 const btnPararAlerta = document.getElementById("btnPararAlerta");
@@ -28,7 +27,11 @@ const infoCulto = () => {
 const privacidadeCulto = () => {
   const day = moment().day();
 
-  return day == 1 ? "Não Listado" : "Público";
+  if (day == 0 || day == 3) {
+    return "Público";
+  } else {
+    return "Não listado";
+  }
 };
 
 const configInicial = {
@@ -43,20 +46,6 @@ const configInicial = {
   ],
 };
 
-const prepararOBS = {
-  id: "PrepararOBS",
-  todo: [
-    {
-      title:
-        "Checar se som chega no OBS (verificar captura de  entrada de audio no painel 'Mixer de áudio')",
-    },
-    { title: "Projetar tela do OBS" },
-    { title: "Atualizar cache do Holyrics Biblia" },
-    { title: "Atualizar cache do Holyrics Louvor" },
-    { title: "Atualizar cache de Holyrics Imagem" },
-  ],
-};
-
 const prepararHolyrics = {
   id: "PrepararHolyrics",
   todo: [
@@ -66,8 +55,22 @@ const prepararHolyrics = {
         "Louvores (Caso não tenha o louvor, pesquisar com Ctrl + Shift + H)",
     },
     { title: "Deixar louvores com até 2 linhas por verso" },
-    { title: "Checar se louvor é exibido" },
-    { title: "Verificar se flyers estão no holyrics para o dia de hoje" },
+    { title: "Checar se louvor é exibido no OBS" },
+  ],
+};
+
+const prepararOBS = {
+  id: "PrepararOBS",
+  todo: [
+    {
+      title:
+        "Checar se som chega no OBS (verificar captura de  entrada de audio no painel 'Mixer de áudio')",
+    },
+    { title: "Projetar tela do OBS" },
+    { title: "Atualizar vídeo dos avisos" },
+    { title: "Atualizar cache do Holyrics Biblia" },
+    { title: "Atualizar cache do Holyrics Louvor" },
+    { title: "Atualizar cache de Holyrics Imagem" },
   ],
 };
 
@@ -78,12 +81,19 @@ const prepararTransmissaoYt = {
     { title: "Adicionar título: " + infoCulto() },
     { title: "Atualizar thumbnail com base no dia da semana" },
     {
-      title:
-        "Visibilidade - " +
-        privacidadeCulto() +
-        " \n (usar público apenas para os cultos de quarta e domingo à noite)",
+      title: "Visibilidade - " + privacidadeCulto(),
     },
   ],
+};
+
+const compartilharTransmissao = () => {
+  const day = moment().day();
+
+  if (day == 0 || day == 3) {
+    return { title: "Divulgar link da transmissão no grupo da igreja" };
+  } else {
+    return { title: "Enviar link apenas no grupo de Mídia" };
+  }
 };
 
 const minutos5 = {
@@ -93,7 +103,7 @@ const minutos5 = {
     { title: "Mudar para cena 'Início' para iniciar a contagem regressiva" },
     { title: "Iniciar Transmissão no OBS" },
     { title: "Verificar se transmissão iniciou" },
-    { title: "Divulgar link da transmissão" },
+    compartilharTransmissao(),
   ],
 };
 
