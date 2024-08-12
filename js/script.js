@@ -115,6 +115,11 @@ const abertura = {
   ],
 };
 
+const louvor = {
+  id: "Louvor",
+  todo: [{ title: "Marcar as músicas como tocadas" }],
+};
+
 const dizimo = {
   id: "Dizimo",
   todo: [
@@ -150,6 +155,7 @@ const todos = [
   prepararTransmissaoYt,
   minutos5,
   abertura,
+  louvor,
   dizimo,
   duranteCulto,
   encerrarTransmissao,
