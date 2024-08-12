@@ -124,24 +124,6 @@ Salvar e sair ao terminar:
 
 ![Louvor Exibido no OBS](./_media/2-4-louvor-exibido.png ":class=salvar-louvor")
 
-## 2.5. Verificar se flyers solicitados estão presentes
-
-<video width="1080" loop autoplay muted>
-<source src="v2.0/_media/2-5-Verificar-flyers-solicitados.mov" type="video/mp4">
-</video>
-
-### 2.5.1. Adicionar flyers ao holyrics
-
-<video width="1080" loop autoplay muted>
-<source src="v2.0/_media/2-5-1-Copiar-flyers-holyrics.mov" type="video/mp4">
-</video>
-
-### 2.5.2. Renomear flyers
-
-<video width="1080" loop autoplay muted>
-<source src="v2.0/_media/2-5-2-Renomear-flyers.mov" type="video/mp4">
-</video>
-
 ---
 
 # 3. Preparar OBS
@@ -168,7 +150,13 @@ Salvar e sair ao terminar:
 
 ![Cache Imagem](./_media/3-3-3-Atualizar-cache-Imagem.png ":class=projetar-obs")
 
----
+## 3.6. Atualizar o vídeo dos avisos
+
+## 3.6.1 Baixar o vídeo no grupo de mídia
+
+## 3.6.2. Atualizar o vídeo no OBS
+
+![Projetar OBS](./_media/3-6-2-selecionar-video.png ":class=projetar-obs")
 
 # 4. Preparar Youtube
 

@@ -1,4 +1,3 @@
-const btnSaveNotes = document.getElementById('btn-save-notes')
 const notes = document.getElementById('notes')
 let isTyping = null
 
