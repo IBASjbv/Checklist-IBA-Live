@@ -6,3 +6,7 @@
 video {
     max-width: 100%;
 }
+
+.version-selector {
+    margin-left: 32px;
+}
