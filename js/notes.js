@@ -5,5 +5,5 @@ notes.value = localStorage.getItem('notes')
 
 notes.addEventListener('keyup', () => {
     clearTimeout(isTyping);
-    isTyping = setTimeout(localStorage.setItem('notes', notes.value), 400)
+    isTyping = setTimeout(() => localStorage.setItem('notes', notes.value), 400)
 })
