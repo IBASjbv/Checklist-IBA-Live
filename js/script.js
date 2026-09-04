@@ -10,29 +10,12 @@ const selecionarTodosOsMinimizers = [
 let displayTimer;
 let alertaRemovido = false;
 let notificationDisplayed = false;
+const dadosDoCulto =
+  typeof obterInfoCulto === "function"
+    ? obterInfoCulto(moment(), obterDiaSemanaSimulado())
+    : { titulo: "Sem Culto", horarioAlerta: "", privacidade: "-" };
 
-const infoCulto = () => {
-  const day = moment().day();
-  const today = moment().format("DD/MM/YYYY");
-
-  if (day == 0 || day == 3) return `Culto da Família - ${today}`;
-
-  if (day == 1) return `Culto das Mulheres - ${today}`;
-
-  if (day == 6) return `Culto dos Jovens - ${today}`;
-
-  return "Sem Culto";
-};
-
-const privacidadeCulto = () => {
-  const day = moment().day();
-
-  if (day == 0 || day == 3) {
-    return "Público";
-  } else {
-    return "Não listado";
-  }
-};
+alertarAs.value = dadosDoCulto.horarioAlerta;
 
 const configInicial = {
   id: "ConfigInicial",
@@ -78,10 +61,10 @@ const prepararTransmissaoYt = {
   id: "PrepararTransmissaoYt",
   todo: [
     { title: "Abrir página da transmissão do Youtube" },
-    { title: "Adicionar título: " + infoCulto() },
+    { title: "Adicionar título: " + dadosDoCulto.titulo },
     { title: "Atualizar thumbnail com base no dia da semana" },
     {
-      title: "Visibilidade - " + privacidadeCulto(),
+      title: "Visibilidade - " + dadosDoCulto.privacidade,
     },
   ],
 };
